@@ -35,7 +35,7 @@
 			"method": "GET",
 			"data": [],
 			"dataMode": "params",
-			"tests": "var data = JSON.parse(responseBody);\r\ntests[\"Status code should be 404 and found \" +responseCode.code] = responseCode.code === 404;\r\ntests[\"Expected is ==> Not Found | \" + \"Actual is ==> \" + data.message] = data.message===\"Not Found\";",
+			"tests": "var data = JSON.parse(responseBody);\r\ntests[\"Status code should be 404 and found \" +responseCode.code] = responseCode.code === 400;\r\ntests[\"Expected is ==> Not Found | \" + \"Actual is ==> \" + data.message] = data.message===\"Not Found\";",
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"time": 1465918597119,
